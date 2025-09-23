@@ -4,6 +4,7 @@ import CategoryCard from "../../components/category_card/category_card";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Sparkles, Star, ShoppingBag, Award } from "lucide-react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Home() {
   // 1. Renamed state to be more descriptive (products instead of categories)
@@ -13,9 +14,9 @@ function Home() {
     const fetchFeaturedProducts = async () => {
       try {
         // 2. Updated the API endpoint to fetch featured products
-        const response = await axios.get(
-          "http://localhost:5000/api/products?featured=true"
-        );
+          const response = await axios.get(
+            `${API_URL}/api/products?featured=true`
+          );
         
         // 3. Accessed the 'products' array from the response data
         if (response.data && response.data.products) {

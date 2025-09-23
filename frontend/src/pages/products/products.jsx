@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ProductCard from '../../components/product_card/product_card.jsx'
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-
+const API_URL = import.meta.env.VITE_API_URL;
 
 
 function Products(){
@@ -13,8 +13,8 @@ function Products(){
         const fetchProducts = async () => {
             try {
                 // Fetch data from backend
-                // const response = await axios.get('https://sanshi-h2o-backend.onrender.com/api/products'); 
-                const response = await axios.get('http://localhost:5000/api/products');
+                const response = await axios.get(`${API_URL}/api/products`); 
+                // const response = await axios.get('http://localhost:5000/api/products');
                 console.log("printing response.data: ", response.data);
                 if (response.data && response.data.products) {
                     setProducts(response.data.products);

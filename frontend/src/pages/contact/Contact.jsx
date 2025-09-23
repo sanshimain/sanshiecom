@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Contact.css';
-
+const API_URL = import.meta.env.VITE_API_URL;
 function Contact() {
     // State to hold the form data
     const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ function Contact() {
 
         try {
             // Make a POST request to your backend endpoint
-            const response = await axios.post('http://localhost:5000/api/contact', {
+            const response = await axios.post(`${API_URL}/api/contact`, {
                 name: formData.name,
                 email: formData.email,
                 message: formData.message
