@@ -33,7 +33,7 @@ function Products(){
         <div className="products-container">
             <div className="title">
                 <h1>Our Products</h1>
-                <p>Explore handpicked jewelry, fashion, and accessories designed to bring elegance and charm to everyday moments - curated treasures for women, men, and kids that add sparkle to every story.</p>
+                <p>Explore handpicked fashion and accessories designed to bring elegance and charm to your everyday moments.</p>
             </div>
             {console.log(products)}
             <h3>All Products</h3>
