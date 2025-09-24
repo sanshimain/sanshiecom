@@ -56,7 +56,7 @@
 .form .elements input{
     font-size: 0.9rem;
     /* min-width: 300px; */
-    width: 90%;
+    width: 95%;
     color: var(--neutral-grey);
     background-color: #f9fafb;
     border-radius: 5px;
@@ -67,11 +67,18 @@
     color: var(--tertiary);
 }
 
+.elements input:focus{
+    outline: none;
+}
+.elements textarea:focus{
+    outline: none;
+}
+
 
 .form .elements textarea{
     border: 1px solid #608a9f;
     font-size: 0.9rem;
-    width: 90%;;
+    width: 95%;
     min-height: 150px;
     color: var(--neutral-grey);
     background-color: #f9fafb;
@@ -88,10 +95,10 @@
     background-color: var(--primary-blue);
     font-size: 1rem;
     font-weight: bold;
-    width: 90%;
-    border: 0px solid black;
+    width: 98%;
+    border: 1px solid var(--primary-blue);
     border-radius: 5px;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
 }
 
 /* .elements button:hover{
@@ -197,7 +204,7 @@
 
 @media screen and (max-width: 900px) {
     .contact{
-        width: 90%;
+        width: 100%;
     }
     .contact-container{
     display: flex;
@@ -205,8 +212,16 @@
     align-items: center;
     justify-content: center;
 }
+
+    .title p{
+        width: 90%;
+        text-align: center;
+        margin: 1rem auto;
+    }
     .details{
         width: 90%;
-    }
 
+        margin-top: 1rem 0rem;
+        padding: 0px;
+    }
 }

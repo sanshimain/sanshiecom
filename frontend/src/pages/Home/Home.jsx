@@ -41,8 +41,10 @@ function Home() {
         <div className="hero-content">
           <img src="logoHome.svg" alt="logo" />
 
-          <a href="/about"><button className="hero-button">Learn More</button></a>
-            
+          {/* <a href="/about"><button className="hero-button">Learn More</button></a> */}
+          <Link to={"/about"}>
+            <button className="hero-button">Learn More</button>
+          </Link>
 
         </div>
       </div>
@@ -66,10 +68,10 @@ function Home() {
             />
           ))}
         </div>
-        {/* <Link to="/products"> */}
-        <a href="/products"><button className="view-all-button">View All Products</button></a>
+        <Link to="/products">
+<button className="view-all-button">View All Products</button>
           
-        {/* </Link> */}
+        </Link>
       </div>
 
       {/* block 3 */}

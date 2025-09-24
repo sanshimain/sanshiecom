@@ -1,55 +1,39 @@
-/* Import Google Fonts at the very top */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,500;1,500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* --- Step 1: Import ONLY the fonts and weights you need --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
 
-/* Define Global Color Variables */
-/* :root {
-  --primary-blue: #0077CC;
-  --light-blue: #00AEEF;
-  --sky-blue: #76DAFF;
-  --soft-blue: #EAF8FF;
-  --white: #FFFFFF;
-  --neutral-grey: #6B7280;
-} */
-/* Define Global Color Variables */
+/* --- Step 2: Define your color palette with functional names --- */
 :root {
-  --primary-blue: #EB487F;
-  --light-blue: #FF78A6;
-  --sky-blue: #F4E1E5;
-  --soft-blue: #FFF4F7;
-  /* --soft-blue: #FFF4F7; */
-  --white: #FFFFFF;
-  --neutral-grey: #6B7280;
-  --emphasis: #300B15;
+  --color-primary: #EB487F;   /* Main brand color for buttons, links */
+  --color-accent: #FF78A6;    /* For secondary highlights, hover effects */
+  --color-emphasis: #300B15;  /* For important text, dark accents */
+  --color-secondary: #F4E1E5; /* For borders, dividers, subtle backgrounds */
+  --color-background: #FFF4F7; /* Main page background */
+  --color-text: #333333;      /* Default text color (using a dark grey instead of pure black is easier on the eyes) */
+  --color-surface: #FFFFFF;  /* For cards and elements on top of the background */
+  --neutral-grey: #6B7880;    /* For secondary text, disabled states */
 }
 
-/* 
-colors:
-Primary = EB487F
-emphasis = 300B15
-accent = FF78A6
-secondary = F4E1E5
-tertiary = 6B7280
-background = FFF4F7
-white = FFFFFF 
-*/
 
-
-/* Global Typography and Base Styles */
+/* --- Step 3: Apply your fonts and colors globally --- */
 body {
   margin: 0;
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* Default font for all paragraphs and text */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-p{
-  font-family:  'Inter', 'Poppins', sans-serif;
-  font-family: 'playfair';
-}
-
+/* Headings will use the more decorative font */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', 'Poppins', sans-serif;
-  font-family: 'playfair';
-  color: var(--primary-blue);
+  font-family: 'Playfair Display', serif; /* Use Playfair Display for headings, with a generic serif fallback */
+  color: var(--color-emphasis);
+  font-weight: 700; /* We imported the 'bold' weight (700) for this */
 }
 
-
+/* Paragraphs will inherit the 'Roboto' font from the body */
+p {
+  line-height: 1.6; /* Improves readability */
+}

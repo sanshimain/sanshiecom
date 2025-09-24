@@ -83,7 +83,7 @@ function Contact() {
                                 placeholder="Enter your Email Address"
                                 value={formData.email}
                                 onChange={handleChange}
-                                // required
+                            // required
                             />
                         </div>
                         <div className='elements'>
@@ -108,28 +108,28 @@ function Contact() {
                         {/* You can add contact info here later */}
                     </div>
                     <div
-            className="detail-tiles social-links"
-            style={{
-              backgroundImage:
-                "linear-gradient(to bottom, var(--color-surface), var(--color-accent))",
-            }}
-          >
-            <a href="https://www.linkedin.com" target="_blank">
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-            {/* <a href="https://github.com/Infiniper">
+                        className="detail-tiles social-links"
+                        style={{
+                            backgroundImage:
+                                "linear-gradient(to bottom, var(--color-surface), var(--color-accent))",
+                        }}
+                    >
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                        {/* <a href="https://github.com/Infiniper">
               <i className="fa-brands fa-github"></i>
             </a> */}
-            <a href="https://x.com" target="_blank">
-              <i className="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/sanshi_india1567" target="_blank">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="mailto:singhkartik3108199@gmail.com">
-              <i className="fa-solid fa-envelope"></i>
-            </a>
-          </div>
+                        <a href="https://x.com" target="_blank">
+                            <i className="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sanshi_india1567" target="_blank">
+                            <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="mailto:singhkartik3108199@gmail.com">
+                            <i className="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
                 <div className='details'>
                     <div className='details-title'>
@@ -138,16 +138,16 @@ function Contact() {
                     </div>
                     <div>
                         <div><h4>Founders</h4></div>
-                        <div className='detail-tiles' style={{ 'background-image': 'linear-gradient(to bottom, white, var(--sky-blue))'}}>
+                        <div className='detail-tiles' style={{ 'background-image': 'linear-gradient(to bottom, white, var(--sky-blue))' }}>
                             <h4>Rameshwar Singh</h4>
                             <p>Founder & CEO</p>
-                            <p style={{'font-size':'1rem'}}>7398997884</p>
+                            <p>7398997884</p>
                             <p>Business inquiries, partnerships, general questions</p>
                         </div>
-                        <div className='detail-tiles' style={{ 'background-image': 'linear-gradient(to bottom, white, var(--sky-blue))'}}>
+                        <div className='detail-tiles' style={{ 'background-image': 'linear-gradient(to bottom, white, var(--sky-blue))' }}>
                             <h4>Kartikay Singh</h4>
                             <p>Co-Founder & CTO</p>
-                            <p style={{'font-size':'1rem'}}>7398997884</p>
+                            <p>7398997884</p>
                             <p>Technical support, product questions, operations</p>
                         </div>
                         <div className='detail-tiles'>
@@ -158,7 +158,7 @@ function Contact() {
                         </div>
                         <div className='detail-tiles'>
                             <h4>Email Support</h4>
-                            <p>info@sanshih2o.com</p>
+                            <p>sanshi.main@gmail.com</p>
                             <p>We typically respond within 24 hours</p>
                         </div>
                         <div className='detail-tiles'>
@@ -168,9 +168,6 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                {/* {faq} */}
             </div>
         </div>
     );
