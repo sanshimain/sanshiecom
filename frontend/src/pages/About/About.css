@@ -3,6 +3,14 @@
 
 }
 
+.about-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .about-title{
     display: flex;
     flex-direction: column;
@@ -196,6 +204,20 @@
         text-align: center;
         width: 90%;
     }
+    .about-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
+    .about-heading h1{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
     .founder-container{
         padding: 0px;
         margin: 0px;

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
+import {Link} from "react-router-dom";
 // Assuming you have similar Button and Input components
 // import Button1 from "../button1/button1";
 // import InputBox from "../input-box/input-box";
@@ -27,10 +28,10 @@ const Footer = () => {
         <h4>Quick Links</h4>
         <ul>
           {/* // Simplified navigation for the new site */}
-          <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <Link to={"/"}><p>Home</p></Link>
+          <Link to={"/products"}><p>Products</p></Link>
+          <Link to={"/about"}><p>About Us</p></Link>
+          <Link to={"/contact"}><p>Contact Us</p></Link>
         </ul>
       </nav>
 
@@ -48,7 +49,7 @@ const Footer = () => {
         <h4>Follow Us</h4>
         <ul>
           <li><a href="mailto:singhkartik3108199@gmail.com" target="_blank" rel="noopener noreferrer">G-Mail</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
           <li><a href="https://www.instagram.com/sanshi_india1567" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </div>
@@ -57,7 +58,6 @@ const Footer = () => {
         <h4>Join Our Newsletter</h4>
         <p>Get updates on new products and special offers!</p>
         <div className={styles.newsletterForm}>
-          {/* You can reuse your InputBox and Button components here */}
           <input type="email" placeholder="Enter your email" className={styles.newsletterInput} />
           <button className={styles.newsletterButton}>Subscribe</button>
         </div>
@@ -66,9 +66,9 @@ const Footer = () => {
       <div className={styles.copyright}>
         <p>Copyright © 2025 Sanshi H2O. All Rights Reserved.</p>
         <div className={styles.legalLinks}>
-          <a href="/terms">Terms & Conditions</a>
+          <Link to={"/"}>Terms & Conditions</Link>
           <span>|</span>
-          <a href="/privacy">Privacy Policy</a>
+          <Link to={"/"}>Privacy Policy</Link>
         </div>
       </div>
     </footer>

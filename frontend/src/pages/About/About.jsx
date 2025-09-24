@@ -5,7 +5,9 @@ function About(){
     return (
         <div className='about-container'>
             <div className="about-title">
-                <h1 style={{marginBottom:'0px'}} >About </h1> <h1 style={{marginTop:'0px'}}>Sanshi E-Com</h1>
+                <div className='about-heading'>
+                <h1>About </h1> <h1>Sanshi E-Com</h1>
+                </div>
                 <p>Celebrating everyday sparkle through thoughtfully curated accessories that tell a story and complement your unique style.</p>
             </div>
             <div className='founder-container'>
